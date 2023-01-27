@@ -1,0 +1,85 @@
+.color-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.color-list > * {
+  text-align: center;
+  padding: 2em 2em;
+  margin: 0.2em;
+  background-color: #ccc;
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+}
+.color-list li {
+  position: relative;
+}
+#main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+#main h1 {
+  color: #0f5fbb;
+}
+.purple {
+  background-color: #800080;
+}
+.black {
+  background-color: #444;
+}
+.red {
+  background-color: #f00;
+}
+.pink {
+  background-color: #ff6ec7;
+}
+.orange {
+  background-color: #fb8800;
+}
+.blue {
+  background-color: #00f;
+}
+.green {
+  background-color: #008000;
+}
+.yellow {
+  background-color: #ff0;
+}
+.brown {
+  background-color: #a52a2a;
+}
+.display-boxes {
+  padding: 10px 20px;
+  margin: 10px auto;
+  display: block;
+  font-size: 20px;
+  display: none;
+}
+.color_theory h1,
+h3 {
+  text-align: center;
+}
+.color_description {
+  margin: 20px 0;
+  font-size: 18px;
+  width: 90%;
+  color: #000;
+}
+.color_description .text {
+  flex: 2;
+  padding-right: 25px;
+}
+.color_description img {
+  object-fit: cover;
+  border-radius: 5px;
+  height: auto;
+  width: 300px;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
