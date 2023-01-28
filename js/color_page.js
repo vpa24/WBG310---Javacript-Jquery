@@ -16,13 +16,15 @@ $(function () {
         );
       }
       chosedColor = color;
-      $(`.${color}`).animate(
-        {
-          top: "-30px",
-        },
-        400,
-        "easeInSine"
-      );
+      $(`.${color}`)
+        .animate(
+          {
+            top: "-30px",
+          },
+          400,
+          "easeInSine"
+        )
+        .effect("bounce", { times: 5 }, "slow");
       // slide up & slide down
       $(".color_description .d-flex").slideUp(1000);
       $(`.color_description .select_${color}`).slideDown(1000);
