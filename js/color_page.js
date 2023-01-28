@@ -24,7 +24,7 @@ $(function () {
           400,
           "easeInSine"
         )
-        .effect("bounce", { times: 5 }, "slow");
+        .effect("bounce", { times: 5 }, "fast");
       // slide up & slide down
       $(".color_description .d-flex").slideUp(1000);
       $(`.color_description .select_${color}`).slideDown(1000);
