@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="icon.png" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/styles_contact.css" />
-    <link rel="stylesheet" href="css/global_styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
@@ -14,192 +14,135 @@
     ></script>
     <script type="text/javascript" src="js/contact.js"></script>
   </head>
-  <body
-    class="post-template-default single single-post postid-14353 single-format-standard wp-custom-logo wp-embed-responsive c551 wpex-theme wpex-responsive full-width-main-layout no-composer wpex-live-site site-full-width content-right-sidebar has-sidebar has-topbar post-in-category-collections sidebar-widget-icons hasnt-overlay-header wpex-antialiased wpex-mobile-toggle-menu-icon_buttons has-mobile-menu wpex-share-p-horizontal wpex-js wpb-js-composer js-comp-ver-6.9.0 vc_responsive edd-js wpex-docready wpex-window-loaded"
-  >
-    <div id="outer-wrap" class="wpex-clr">
-      <div id="wrap" class="wpex-clr">
-        <div
-          id="site-header-sticky-wrapper"
-          class="wpex-sticky-header-holder wpex-can-sticky not-sticky"
-        >
-          <header id="site-header">
-            <div
-              id="site-header-inner"
-              class="header-one-inner header-padding container wpex-relative wpex-h-100 wpex-py-30 wpex-clr"
-            >
-              <a class="navbar-brand logo" href="/">Phuong Anh Vu</a>
-              <div
-                id="site-navigation-wrap"
-                class="navbar-style-one navbar-fixed-height navbar-fixed-line-height wpex-dropdowns-caret wpex-stretch-megamenus hide-at-mm-breakpoint wpex-clr"
-              >
-                <nav
-                  id="site-navigation"
-                  class="navigation main-navigation main-navigation-one wpex-clr"
-                >
-                  <ul
-                    id="menu-main-small-2022"
-                    class="main-navigation-ul dropdown-menu wpex-dropdown-menu wpex-dropdown-menu--onhover wpex-dropdown-menu--animate"
-                  >
-                    <li id="menu-item-323583" class="menu-item">
-                      <a href="/"><span class="link-inner">Home</span></a>
-                    </li>
-                    <li id="menu-item-323587" class="menu-item">
-                      <a href="color_theory.html"
-                        ><span class="link-inner">Color Theory</span></a
-                      >
-                    </li>
-                    <li id="menu-item-323611" class="menu-item active">
-                      <a href="contact.html"
-                        ><span class="link-inner">Contact Us</span></a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </header>
-        </div>
-        <div class="lt-hero-unit lt-container lt-mt-n8">
-          <div class="lt-hero-unit__bg"></div>
-          <div
-            class="lt-container-inner lt-search-box lt-search-box--hero-unit"
-          >
-            <h1 class="h1 lt-hero-unit__title lt-mb-5">Let's Get in Touch</h1>
-          </div>
-        </div>
-
-        <main id="main" class="site-main wpex-clr">
-          <section id="contact-us">
-            <div class="wrap pixpa-contactus">
-              <div
-                class="alert alert-success"
-                role="alert"
-                id="success_message"
-              >
-                Thanks for getting in touch. We'll get back to you soon.
-              </div>
-              <div class="pannel-left w-100">
-                <p>
-                  Feel free to use the contact form to the right to reach out to
-                  us.
-                </p>
-
-                <div class="contact-form w-75">
-                  <form class="js-contact-form js-csrf-form-field" id="contact">
-                    <div class="input-form">
-                      <input
-                        type="text"
-                        required
-                        placeholder="Full Name"
-                        id="fullName"
-                        name="name"
-                        class="contact-form-field"
-                      />
-                      <h5 id="namecheck" style="color: red">
-                        You must enter your full name
-                      </h5>
-                    </div>
-                    <div class="input-form">
-                      <input
-                        type="text"
-                        required
-                        placeholder="Your Age"
-                        id="age"
-                        name="age"
-                        class="contact-form-field"
-                      />
-                      <h5 id="agecheck" style="color: red">
-                        You must enter your age
-                      </h5>
-                    </div>
-                    <div class="input-form">
-                      <input
-                        type="text"
-                        required
-                        placeholder="Your Phone Number"
-                        name="phone"
-                        id="phone"
-                        class="contact-form-field"
-                      />
-                      <h5 id="phonecheck" style="color: red">
-                        You must enter your phone number
-                      </h5>
-                    </div>
-                    <div class="input-form">
-                      <input
-                        type="email"
-                        required
-                        placeholder="Your email address"
-                        class="contact-form-field"
-                        id="email"
-                        name="email"
-                      />
-                      <h5 id="emailcheck" style="color: red">
-                        You must enter your E-Mail address
-                      </h5>
-                    </div>
-                    <div class="input-form">
-                      <textarea
-                        required
-                        placeholder="Your Message"
-                        id="comment"
-                        class="contact-form-field"
-                        name="comment"
-                      ></textarea>
-                      <h5 id="commentcheck" style="color: red">
-                        You must enter your message
-                      </h5>
-                    </div>
-                    <div class="input-form">
-                      <p>Select your preferred contact method:</p>
-                      <div>
-                        <input
-                          type="radio"
-                          id="contactChoice1"
-                          name="contact"
-                          value="email"
-                        />
-                        <label for="contactChoice1">Email</label>
-                        <input
-                          type="radio"
-                          id="contactChoice2"
-                          name="contact"
-                          value="phone"
-                        />
-                        <label for="contactChoice2">Phone</label>
-                      </div>
-                      <h5 id="radiocheck" style="color: red">
-                        Please select your contact method
-                      </h5>
-                    </div>
-                  </form>
-                  <button
-                    type="submit"
-                    id="contact-form"
-                    class="submit-btn button v-pixpa-blue margin-t25"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-
-        <div
-          id="footer-bottom"
-          class="wpex-py-20 wpex-text-sm wpex-surface-dark wpex-bg-gray-900 wpex-text-center wpex-md-text-left"
-        >
-          <div id="footer-bottom-inner" class="container">
-            <div
-              class="footer-bottom-flex wpex-md-flex wpex-md-justify-between wpex-md-items-center"
-            >
-              <div id="copyright" class="wpex-last-mb-0">Copyright 2023</div>
-            </div>
-          </div>
-        </div>
+  <body>
+    <header id="site-header">
+      <div class="main-menu">
+        <div class="menu-name"><a href="/">Phuong Anh Vu</a></div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="color_theory.html">Color Theory</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <div id="banner">
+      <h1>Let's Get in Touch</h1>
     </div>
+
+    <main id="main">
+      <section id="contact-us">
+        <div class="wrap pixpa-contactus">
+          <div class="alert alert-success" role="alert" id="success_message">
+            Thanks for getting in touch. We'll get back to you soon.
+          </div>
+          <div class="pannel-left w-100">
+            <p>
+              Feel free to use the contact form to the right to reach out to us.
+            </p>
+
+            <div class="contact-form w-75">
+              <form class="js-contact-form js-csrf-form-field" id="contact">
+                <div class="input-form">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Full Name"
+                    id="fullName"
+                    name="name"
+                    class="contact-form-field"
+                  />
+                  <h5 id="namecheck" style="color: red">
+                    You must enter your full name
+                  </h5>
+                </div>
+                <div class="input-form">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Your Age"
+                    id="age"
+                    name="age"
+                    class="contact-form-field"
+                  />
+                  <h5 id="agecheck" style="color: red">
+                    You must enter your age
+                  </h5>
+                </div>
+                <div class="input-form">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Your Phone Number"
+                    name="phone"
+                    id="phone"
+                    class="contact-form-field"
+                  />
+                  <h5 id="phonecheck" style="color: red">
+                    You must enter your phone number
+                  </h5>
+                </div>
+                <div class="input-form">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Your email address"
+                    class="contact-form-field"
+                    id="email"
+                    name="email"
+                  />
+                  <h5 id="emailcheck" style="color: red">
+                    You must enter your E-Mail address
+                  </h5>
+                </div>
+                <div class="input-form">
+                  <textarea
+                    required
+                    placeholder="Your Message"
+                    id="comment"
+                    class="contact-form-field"
+                    name="comment"
+                  ></textarea>
+                  <h5 id="commentcheck" style="color: red">
+                    You must enter your message
+                  </h5>
+                </div>
+                <div class="input-form">
+                  <p>Select your preferred contact method:</p>
+                  <div>
+                    <input
+                      type="radio"
+                      id="contactChoice1"
+                      name="contact"
+                      value="email"
+                    />
+                    <label for="contactChoice1">Email</label>
+                    <input
+                      type="radio"
+                      id="contactChoice2"
+                      name="contact"
+                      value="phone"
+                    />
+                    <label for="contactChoice2">Phone</label>
+                  </div>
+                  <h5 id="radiocheck" style="color: red">
+                    Please select your contact method
+                  </h5>
+                </div>
+              </form>
+              <button
+                type="submit"
+                id="contact-form"
+                class="submit-btn button v-pixpa-blue margin-t25"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer">Copyright 2023</div>
   </body>
 </html>

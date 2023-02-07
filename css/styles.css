@@ -1,0 +1,72 @@
+* {
+  margin: 0 auto;
+  font-family: "Arial";
+  font-size: 17px;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2em;
+}
+.container {
+  max-width: 1200px;
+}
+.main-menu {
+  height: 95px;
+  background: #75bbe7;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+.main-menu a {
+  line-height: 95px;
+}
+.main-menu div a:first-child {
+  float: left;
+  text-decoration: none;
+  padding: 0 15px;
+  color: #f6b912;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main-menu ul {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+.main-menu ul li {
+  float: left;
+  padding: 0 15px;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.main-menu ul li:not(first-child):hover {
+  background-color: #fff;
+}
+.main-menu ul li:not(first-child):hover a {
+  color: #0099cc;
+}
+.main-menu ul li.active a {
+  font-weight: bold;
+  color: #333 !important;
+}
+#main {
+  padding: 50px 200px;
+  position: relative;
+}
+#banner {
+  background: url(../images/banner2.png);
+  position: relative;
+  padding: 10%;
+  text-align: center;
+}
+#banner h1 {
+  font-size: 65px;
+  color: #e38b9d;
+}
+#footer {
+  background-color: #333;
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+}
