@@ -23,7 +23,7 @@ h1 {
   float: left;
   text-decoration: none;
   padding: 0 15px;
-  color: #f6b912;
+  color: #fd6483;
   font-weight: bold;
   font-size: 20px;
 }
@@ -53,6 +53,7 @@ h1 {
 #main {
   padding: 50px 200px;
   position: relative;
+  color: #555;
 }
 #banner {
   background: url(../images/banner2.png);
@@ -62,7 +63,7 @@ h1 {
 }
 #banner h1 {
   font-size: 65px;
-  color: #e38b9d;
+  color: #fd6483;
 }
 #footer {
   background-color: #333;
