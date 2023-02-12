@@ -17,6 +17,7 @@
     <script type="text/javascript" src="js/contact.js"></script>
     <script src="./smartmenus/jquery.smartmenus.min.js"></script>
     <script src="js/custom_smart_menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
   </head>
   <body>
     <header id="site-header">
@@ -54,28 +55,31 @@
     <main id="main">
       <section id="contact-us">
         <div class="wrap pixpa-contactus">
-          <div class="alert alert-success" role="alert" id="success_message">
+          <!-- <div class="alert alert-success" role="alert" id="success_message">
             Thanks for getting in touch. We'll get back to you soon.
-          </div>
+          </div> -->
           <div class="pannel-left w-100">
             <p>
               Feel free to use the contact form to the right to reach out to us.
             </p>
 
             <div class="contact-form w-75">
-              <form class="js-contact-form js-csrf-form-field" id="contact">
+              <form
+                class="js-contact-form js-csrf-form-field"
+                id="contact"
+                name="contact"
+                method="post"
+              >
                 <div class="input-form">
                   <input
                     type="text"
                     required
                     placeholder="Full Name"
                     id="fullName"
-                    name="name"
-                    class="contact-form-field"
+                    name="fullName"
+                    title="PLease enter your full name."
+                    class="required contact-form-field"
                   />
-                  <h5 id="namecheck" style="color: red">
-                    You must enter your full name
-                  </h5>
                 </div>
                 <div class="input-form">
                   <input
@@ -86,9 +90,6 @@
                     name="age"
                     class="contact-form-field"
                   />
-                  <h5 id="agecheck" style="color: red">
-                    You must enter your age
-                  </h5>
                 </div>
                 <div class="input-form">
                   <input
@@ -97,67 +98,26 @@
                     placeholder="Your Phone Number"
                     name="phone"
                     id="phone"
-                    class="contact-form-field"
+                    class="required contact-form-field"
                   />
-                  <h5 id="phonecheck" style="color: red">
-                    You must enter your phone number
-                  </h5>
                 </div>
                 <div class="input-form">
                   <input
                     type="email"
-                    required
                     placeholder="Your email address"
-                    class="contact-form-field"
+                    class="required contact-form-field"
                     id="email"
                     name="email"
                   />
-                  <h5 id="emailcheck" style="color: red">
-                    You must enter your E-Mail address
-                  </h5>
                 </div>
-                <div class="input-form">
-                  <textarea
-                    required
-                    placeholder="Your Message"
-                    id="comment"
-                    class="contact-form-field"
-                    name="comment"
-                  ></textarea>
-                  <h5 id="commentcheck" style="color: red">
-                    You must enter your message
-                  </h5>
-                </div>
-                <div class="input-form">
-                  <p>Select your preferred contact method:</p>
-                  <div>
-                    <input
-                      type="radio"
-                      id="contactChoice1"
-                      name="contact"
-                      value="email"
-                    />
-                    <label for="contactChoice1">Email</label>
-                    <input
-                      type="radio"
-                      id="contactChoice2"
-                      name="contact"
-                      value="phone"
-                    />
-                    <label for="contactChoice2">Phone</label>
-                  </div>
-                  <h5 id="radiocheck" style="color: red">
-                    Please select your contact method
-                  </h5>
-                </div>
+                <button
+                  type="submit"
+                  id="contact-form"
+                  class="submit-btn button v-pixpa-blue margin-t25"
+                >
+                  Submit
+                </button>
               </form>
-              <button
-                type="submit"
-                id="contact-form"
-                class="submit-btn button v-pixpa-blue margin-t25"
-              >
-                Submit
-              </button>
             </div>
           </div>
         </div>
