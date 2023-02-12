@@ -6,17 +6,38 @@
     <link rel="icon" href="icon.png" />
     <title>Home page</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="./smartmenus/sm-core-css.css" rel="stylesheet" />
+    <link href="./smartmenus/sm-blue.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="js/custom_smart_menu.js"></script>
   </head>
   <body>
     <header id="site-header">
       <div class="main-menu">
-        <div class="menu-name"><a href="./">Phuong Anh Vu</a></div>
-        <nav>
-          <ul>
+        <nav class="main-nav" role="navigation">
+          <h2 class="nav-brand"><a href="./">Phuong Anh Vu</a></h2>
+          <ul class="sm sm-blue" id="main-menu">
             <li class="active"><a href="./">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="product.html">Product</a></li>
-            <li><a href="service.html">Service</a></li>
+            <li>
+              <a href="#">Service</a>
+              <ul>
+                <li>
+                  <a href="#">Building Website</a>
+                  <ul>
+                    <li><a href="#">Drupal 8</a></li>
+                    <li><a href="#">Drupal 9</a></li>
+                    <li><a href="#">Drupal 10</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li><a href="color_theory.html">Color Theory</a></li>
             <li><a href="VietNam_scenic.html">Vietnam Scenic</a></li>
             <li><a href="contact.html">Contact Us</a></li>
