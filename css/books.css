@@ -80,8 +80,3 @@ a.ui-button:active,
   height: 3px;
   background: linear-gradient(to right, var(--color1), var(--color2));
 }
-.introduction {
-  margin: 20px 0;
-  font-style: italic;
-  font-size: 17px;
-}
