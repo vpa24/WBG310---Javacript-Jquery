@@ -7,6 +7,9 @@
   text-decoration-style: wavy;
   text-decoration-color: #2c97da;
 }
+#gallery{
+  cursor: pointer;
+}
 #gallery,
 #photo {
   text-align: center;
