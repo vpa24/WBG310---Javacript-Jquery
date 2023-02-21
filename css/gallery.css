@@ -7,7 +7,7 @@
   text-decoration-style: wavy;
   text-decoration-color: #2c97da;
 }
-#gallery{
+#gallery {
   cursor: pointer;
 }
 #gallery,
@@ -20,6 +20,8 @@
 }
 #gallery img:hover,
 #gallery img.selected {
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
   opacity: 1;
 }
 .slideshow_images {
