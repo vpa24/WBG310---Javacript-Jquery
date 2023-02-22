@@ -18,15 +18,8 @@
 .color-list li {
   position: relative;
 }
-#main {
-  max-width: 90%;
-  margin: 0 auto;
-}
 .title {
   text-align: center;
-}
-#main h1 {
-  color: #0f5fbb;
 }
 .purple {
   background-color: #800080;
