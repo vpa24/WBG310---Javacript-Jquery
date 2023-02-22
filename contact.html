@@ -110,6 +110,45 @@
                     name="email"
                   />
                 </div>
+                <div class="input-form">
+                  <p>What is your job?</p>
+                  <input type="radio" name="job" id="student" value="student" />
+                  <label for="student">Student</label>
+                  <input
+                    type="radio"
+                    name="job"
+                    id="engineering"
+                    value="engineering"
+                  />
+                  <label for="engineering">Engineering</label>
+                  <input
+                    type="radio"
+                    name="job"
+                    id="tech/admin"
+                    value="tech/admin"
+                  />
+                  <label for="tech/admin">Tech/Admin</label>
+                  <input
+                    type="radio"
+                    name="job"
+                    id="security"
+                    value="security"
+                  />
+                  <label for="security">Security</label>
+                </div>
+                <div>
+                  <label class="m-0" for="contact"
+                    >Please select your preferred contact method:</label
+                  ><br />
+                  <select name="cotact" id="contact">
+                    <option value="none" selected="true" disabled="disabled">
+                      -- Choose --
+                    </option>
+                    <option value="email">E-mail</option>
+                    <option value="phone">Phone</option>
+                    <option value="mail">Mail</option>
+                  </select>
+                </div>
                 <button
                   type="submit"
                   id="contact-form"
