@@ -7,6 +7,9 @@ $(document).ready(function () {
         required: true,
         phoneUS: true,
       },
+      contact: {
+        required: true,
+      },
     },
     messages: {
       age: {
@@ -20,6 +23,9 @@ $(document).ready(function () {
       },
       phone: {
         required: "Please enter your phone number",
+      },
+      contact: {
+        required: "Please select your contact method.",
       },
     },
     errorPlacement: function (error, element) {
