@@ -1,0 +1,23 @@
+.about_me {
+  display: flex;
+  border: 2px solid #eeeeee;
+  padding: 15px;
+  border-radius: 15px;
+}
+.about_me .img {
+  max-height: 250px;
+  margin: auto 0;
+}
+.about_me img {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+}
+.about_me .description {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.about_me div {
+  padding: 5px 5px 5px 10px;
+}
