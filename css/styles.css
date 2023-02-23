@@ -185,6 +185,9 @@ h1 {
     display: block;
   }
 }
+.sm-blue > li:first-child > a {
+  border-radius: 0 !important;
+}
 .introduction {
   margin: 20px 0;
   font-style: italic;
