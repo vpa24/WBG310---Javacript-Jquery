@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $("#success_message").hide();
   $("#contact").validate({
     rules: {
       age: { required: true, number: true, maxlength: 2 },
@@ -35,6 +36,14 @@ $(document).ready(function () {
       // for demo
       alert("Thanks for keep in touch!");
       return false;
+    },
+    submitHandler: function (form) {
+      $("#success_message").show();
+      $(":input", form)
+        .not(":button, :submit, :reset, :hidden", ":seclect")
+        .val("")
+        .prop("checked", false);
+      $("#contact option:first").attr("selected", "selected");
     },
   });
   jQuery.validator.addMethod(
