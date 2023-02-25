@@ -10,3 +10,4 @@ This is the website I developed for my final project in the 8-week WBG310 course
 - Contact Us page: Includes a contact form that I created with jQuery validation techniques in Week 6.
 
 Feel free to explore the website and let me know your thoughts. Thank you for checking it out!
+A website link for this project is https://glittering-cactus-b99dcc.netlify.app/
