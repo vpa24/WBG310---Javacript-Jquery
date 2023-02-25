@@ -83,3 +83,6 @@ a.ui-button:active,
 #tabContainer {
   max-width: 900px;
 }
+.panel_content img {
+  max-width: 30%;
+}
